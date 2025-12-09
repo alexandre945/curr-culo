@@ -77,3 +77,31 @@ footer {
     border: none;
   }
 }
+.btn-pdf {
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.2s;
+}
+
+.btn-pdf:hover {
+  background: #000;
+}
+
+.pdf-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Ocultar botão na versão PDF */
+@media print {
+  .btn-pdf {
+    display: none;
+  }
+}
+
